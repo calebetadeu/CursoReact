@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Comentario from './components/Comentario'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <h1>Meu Projeto </h1>  
+        <Comentario nome='Calebe' email='calebetadeu@gmail.com' data={new Date(2020,3,190)} >
+              Ola Joao tudo
+          </Comentario>
+        <Comentario nome='Josue' email='josuetadeu@gmail.com' data={new Date(2020,4,25)}>Mt legal </Comentario>
+        <Comentario  nome='sara' email='sara@gmail.com'data={new Date(2020,5,26)} >Demaisss </Comentario>
+      
     </div>
   );
 }
